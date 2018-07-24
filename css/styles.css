@@ -244,7 +244,7 @@ nav h1 a {
 #restaurant-address {
   font-size: 11pt;
   margin: 10px 0px;
-	padding-left: 10px;
+	padding: 0 0 0 10px;
 	font-weight:bold;
 }
 #restaurant-cuisine {
@@ -272,7 +272,7 @@ nav h1 a {
   color: #f58500;
   font-size: 18pt;
   font-weight: 300;
-	padding-left: 10px;
+	padding: 0 0 0 10px;
 }
 #reviews-list {
   margin: 0;
@@ -326,7 +326,7 @@ nav h1 a {
 }
 
 #restaurant-hours td {
-	padding-left: 10px;
+	padding: 0 0 0 10px;
 	font-size: 10pt;
   color: #666;
 }
@@ -391,7 +391,7 @@ nav h1 a {
 	}
 	#restaurant-name {
 		display: block;
-		padding-left: 10px;
+		padding: 0 0 0 10px;
 	}
 	#reviews-container {
 		display: block;
