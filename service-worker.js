@@ -30,20 +30,21 @@ self.addEventListener('install', event => {
     )
   );
 });
-
-self.addEventListener('activate', event => {
+// Something broken here
+self.addEventListener('activate', () => {
   caches.keys().then(cacheNames => {
     return Promise.all(
       cacheNames.filter(cacheName => {
         return cacheName.startsWith('restaurant-') && cacheName != staticCacheName;
       }).map(cacheName => {
-        return caches.delete(cacheName)
+        return caches.delete(cacheName);
       })
     );
   })
 });
 
 self.addEventListener('fetch', event => {
+  console.log(event.request.url)
   event.respondWith(
     caches.match(event.request).then(response => {
       if (response) {
