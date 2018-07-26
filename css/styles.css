@@ -58,17 +58,19 @@ nav {
 	margin: 0;
 	padding: 0;
   background-color: #252831;
-	display: flex;
+	display: block;
 	align-items: center;
 	justify-content: center;
-  text-align:center;
 }
 nav h1 {
+	width: 100%;
   margin: auto;
+	padding: 3px 0;
+	text-align: center;
 }
 nav h1 a {
   color: #fff;
-  font-size: 11pt;
+  font-size: 12pt;
   font-weight: 100;
   letter-spacing: 7px;
   text-transform: uppercase;
@@ -80,7 +82,7 @@ nav h1 a {
     font-size: 10pt;
     margin: 0;
     width: calc(100% - 40px);
-
+		display: block;
 }
 
 /* Display list items side by side */
@@ -174,7 +176,7 @@ nav h1 a {
   height: auto;
 	border-radius: 25px 0 25px 0;
 }
-#restaurants-list li h1 {
+#restaurants-list li h2 {
   color: #f18200;
   font-family: Arial,sans-serif;
   font-size: 14pt;
@@ -334,6 +336,9 @@ nav h1 a {
 /* =============== Breakpoint Design ==========*/
 
 @media screen and (min-width: 700px) {
+	nav h1 a {
+	  font-size: 11pt;
+	}
  	#map {
 		height: 500px;
   }
@@ -400,6 +405,9 @@ nav h1 a {
 }
 
 @media screen and (min-width: 1050px) {
+	nav h1 a {
+		font-size: 12pt;
+	}
 	#map {
 		margin: 0;
 		padding: 0;
