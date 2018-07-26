@@ -7,8 +7,8 @@ self.addEventListener('install', event => {
     caches
       .open(staticCacheName)
       .then(cache => cache.addAll([
-        "./",
-        ".service-worker.js",
+        "/",
+        "service-worker.js",
         "index.html",
         "restaurant.html",
         "css/styles.css",
@@ -25,9 +25,10 @@ self.addEventListener('install', event => {
         "img/10.jpg",
         "js/dbhelper.js",
         "js/main.js",
-        "js/resaurant_info.js"
-      ])
-    )
+        "js/restaurant_info.js"
+        ])
+      )
+      .catch(err => console.log(err))
   );
 });
 // Something broken here
